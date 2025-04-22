@@ -1,5 +1,9 @@
 # Domain Validator Script (dvf.sh)
 
+**!!! IMPORTANT WARNING !!!**
+
+**This script performs HTTP requests to external websites. Running this script on a Virtual Private Server (VPS) or other cloud-based hosting environment might violate the terms of service of your hosting provider and lead to your VPS being flagged for abuse or even terminated. Excessive or automated web scraping can be considered malicious activity.  Only run this script on your local development machine or in a controlled environment where you have permission to perform such activities.**
+
 This script, `dvf.sh`, validates certificate domains listed in a CSV file against their associated IP addresses and attempts to retrieve the HTML title from the domain.  It also handles cases where the domain might be accessible with or without the `www.` prefix, prioritizing the version with a valid title and providing HTTP status codes when no title is found.
 
 ## Prerequisites
